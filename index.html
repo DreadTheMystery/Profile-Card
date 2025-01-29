@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="card-container">
+      <img
+        class="round"
+        src="profile-picture.jpeg"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+      />
+      <h3 data-testid="fullName" class="title">Abdulgafar Ridwan</h3>
+      <h6 data-testid="currentLocation">Kaduna, Nigeria</h6>
+      <p data-testid="jobTitle">Frontend Developer</p>
+      <p data-testid="shortBio">
+        Passionate about building responsive and user-friendly web applications,
+        ensuring high performance and smooth user experience.
+      </p>
+      <p data-testid="emailAddress">abdulgafarridwan@gmail.com</p>
+      <div class="social-links" data-testid="socialLinks">
+        <a
+          href="https://www.linkedin.com/in/abdulgafar-ridwan-005199188/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/DreadTheMystery" target="_blank">
+          <i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://x.com/infnty00" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <p id="utcTime" data-testid="currentTimeUTC"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
